@@ -35,6 +35,9 @@ ADD CONSTRAINT ck_client_email CHECK (email LIKE '%@%.%');
 -- Adicionar UNIQUE constraint
  ALTER TABLE client ADD CONSTRAINT un_document UNIQUE (document);
 
+-- Adicionar index para melhorar a perfomance das consultas
+CREATE INDEX idx_client_email ON client(email);
+
 -- Consuta de dados da tabela
 SELECT * FROM client WITH(NOLOCK);
 
