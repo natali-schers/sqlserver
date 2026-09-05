@@ -58,8 +58,7 @@ SELECT * FROM client WHERE status NOT IN ('A', 'I');
 SELECT * FROM client WHERE gender NOT IN ('F');
 
 -- Clientes cadastrados entre duas datas
-SELECT * FROM client
-WHERE createdAt BETWEEN CAST('2026-01-01' AS DATETIME) AND CAST('2026-12-31' AS DATETIME);
+SELECT * FROM client WHERE createdAt BETWEEN CAST('2026-01-01' AS DATETIME) AND CAST('2026-12-31' AS DATETIME);
 
 -- BETWEEN também pode ser utilizado com números
 SELECT * FROM client WHERE id BETWEEN 10 AND 20;
@@ -68,16 +67,13 @@ SELECT * FROM client WHERE id BETWEEN 10 AND 20;
 SELECT * FROM client WHERE email IS NULL;
 
 -- Clientes que possuem e-mail cadastrado
-SELECT *
-FROM client
-WHERE email IS NOT NULL;
+SELECT * FROM client WHERE email IS NOT NULL;
 
 -- Clientes ativos E do gênero feminino
 SELECT * FROM client WHERE status = 'A'  AND gender = 'F';
 
 -- Clientes cadastrados após 01/01/2026 E ativos
-SELECT * FROM client
-WHERE createdAt > CAST('2026-01-01' AS DATETIME) AND status = 'A';
+SELECT * FROM client WHERE createdAt > CAST('2026-01-01' AS DATETIME) AND status = 'A';
 
 -- Clientes ativos OU inativos
 SELECT * FROM client WHERE status = 'A' OR status = 'I';
