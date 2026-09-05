@@ -13,3 +13,6 @@
 - CSV (Comma-Separated Values): um arquivo de texto simples onde as colunas são separadas por um delimitados (geralmente vírgula)
 - XLS (Excel): em formato de planilha
 - JSON (JavaScript Object Notation): padrão para APIs Web, com uma estrutura de chave e valor
+
+## O que é EDA?
+- EDA é a sigla para Exploratory Data Analysis e trata-se do processo de exploração e entendimento dos dados. Nessa etapa, são analisadas padrões de comportamento, inconsistências e relação entre as informações.
